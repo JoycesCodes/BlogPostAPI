@@ -10,3 +10,32 @@ GET http://localhost:3000/api/blogposts/13 HTTP/1.1
 
 ### testing all user page
 GET http://localhost:3000/api/users HTTP/1.1
+
+### create a new blog post
+POST http://localhost:3000/api/blogposts HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "title of blog post!",
+    "body": "body of the blog post",
+    "userId": 1
+}
+
+### update an existing blog post
+PUT http://localhost:3000/api/blogposts/2 HTTP/1.1
+Content-Type: application/application/json
+
+{
+    "title" : "This is the most awesome title ever"
+}
+
+### change something about a user
+PUT http://localhost:3000/api/users/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name" : "Joyce Young"
+}
+
+### delete a blog post
+DELETE http://localhost:3000/api/blogposts/1 HTTP/1.1

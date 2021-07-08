@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
 
+//must add a middleware in order to make content type avaible -- default is json
+app.use(express.json());
+
 app.get("/", function (req, res) {
   res.send("This is the top route in the Blog Post API");
 });
