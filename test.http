@@ -1,0 +1,12 @@
+### test site to make sure it's listening
+GET http://localhost:3000 HTTP/1.1
+
+### test blogpost page
+
+GET http://localhost:3000/api/blogposts HTTP/1.1
+
+### testing specific blog post number
+GET http://localhost:3000/api/blogposts/13 HTTP/1.1
+
+### testing all user page
+GET http://localhost:3000/api/users HTTP/1.1
